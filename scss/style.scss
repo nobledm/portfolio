@@ -1,4 +1,19 @@
-@import 'vars';
 @import 'init/index';
+@import 'site/index';
 @import 'typography/index';
 
+[alt=icon] {
+    height: 2.875rem;
+}
+
+/* UTILITY STYLES */
+.block {
+    display: block;
+}
+
+.flex-row-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* GENERAL STYLES */
