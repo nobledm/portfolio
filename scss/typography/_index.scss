@@ -1,10 +1,12 @@
 @import '../vars/index';
 @import url('https://fonts.googleapis.com/css?family=Lora:700|Open+Sans');
 
-html {font-size: 16px;}
+html {
+  background-color: #fff;
+  font-size: 16px;
+}
 
 body {
-  background-color: white;
   max-width: 75rem;
   font-family: $body-font;
   font-weight: 400;

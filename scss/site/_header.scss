@@ -6,8 +6,8 @@
 
 .site-header {
     position: relative;
-	width: 100%;
-	margin: 0 auto;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
     overflow: hidden;
     
 	&::after {
@@ -25,7 +25,6 @@
 
 @media(min-width:767px) {
     .site-header::after {
-        background-color: cadetblue;
         transform: rotate(35deg) ;
         transform-origin: right bottom;
     }

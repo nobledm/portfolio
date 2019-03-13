@@ -1,8 +1,14 @@
+@import '../vars/index';
 
 .site-nav {
     // background-color: cadetblue;
+    font-size: $small;
 
     p {
         margin-bottom: 0;
     }
+}
+
+.menu-icon {
+    height: 2rem;
 }
