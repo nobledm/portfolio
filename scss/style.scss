@@ -2,7 +2,7 @@
 @import 'site/index';
 @import 'typography/index';
 
-[alt=icon] {
+[alt~=icon] {
     height: 2.875rem;
 }
 
@@ -16,6 +16,13 @@
     justify-content: space-between;
 }
 
+.grid-4column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+}
+
 .circle {
     border-radius: 50%;
 }
@@ -24,13 +31,20 @@
     position: relative;
     
     &::after {
-        content: "";
+        content: '';
         position: absolute;
-        bottom: 3rem;
-        left: 0;  
-        height: 1rem;
+        bottom: -0.75rem;
+        left: 50%;
+        height: 0.125rem;
         width: 5rem;
+        transform: translate(-50%, 0);
+        background-color: tomato;
     }
 }
 
 /* GENERAL STYLES */
+.wrapper {
+    width: 95%;
+    max-width: 75rem;
+    margin: 0 auto;
+}

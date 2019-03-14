@@ -1,8 +1,11 @@
 @import '../vars/index';
 
 .site-nav {
-    // background-color: cadetblue;
+    background-color: cadetblue;
+    position: fixed;
+    width: 100%;
     font-size: $small;
+    z-index: 100;
 
     p {
         margin-bottom: 0;
@@ -10,5 +13,35 @@
 }
 
 .menu-icon {
-    height: 2rem;
+    width: 2rem;
+    margin: 0;
+    align-self: center;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-sub-menu {
+  position: fixed;
+  top: 4rem;
+  padding-top: 1.2rem;
+  z-index: 101;
+}
+
+.mobile-sub-menu li a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mobile-sub-menu {
+  width: 45%;
+  left: -50%;
+  padding-bottom: 0.5rem;
+}
+
+.mobile-sub-menu .current,
+.mobile-sub-menu a:hover,
+.mobile-sub-menu a:active {
+  background: black;
+  color: #fff;
 }

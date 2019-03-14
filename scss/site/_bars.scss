@@ -1,0 +1,16 @@
+.empty-bar {
+    width: 90%;
+    height: 0.875rem;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgb(231, 231, 231), rgb(173, 173, 173));
+}
+
+.fill-bar {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.ux-bar {
+    width: 95%;
+    background: linear-gradient(to bottom, pink, red);
+}

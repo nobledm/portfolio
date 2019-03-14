@@ -13,11 +13,6 @@ window.addEventListener("DOMContentLoaded", function(event) {
         } else {
             TweenMax.to(menu,  0.4,  {left:0, ease:Power2.easeOut});
         }
-    }
- 
-    document.querySelector("#mobile-info-button").addEventListener('click', () => {
-        document.querySelector("#mobile-info-menu").classList.toggle("hidden");
-    });
- 
+    } 
 });
  

@@ -7,7 +7,7 @@
 .site-header {
     position: relative;
     text-align: center;
-    padding: 1.5rem 1.5rem;
+    padding: 4.5rem 1.5rem 1.5rem;
     overflow: hidden;
     
 	&::after {
@@ -19,13 +19,58 @@
 		bottom: 0;
 		left: 0;
         z-index: -10;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
+    }
+
+    a:first-of-type {
+        grid-area: link1;
+        justify-self: flex-end;
+    }
+    a:last-of-type {
+        grid-area: link2;
+        justify-self: flex-start;
     }
 }
 
-@media(min-width:767px) {
+.site-header .grid-4column {
+    grid-template-areas:
+        ". . . ."
+        "link1 link1 link2 link2";
+    justify-items: center;
+}
+
+@media(min-width:700px) {
     .site-header::after {
         transform: rotate(35deg) ;
         transform-origin: right bottom;
     }
+}
+
+.headshot {
+    padding-bottom: 4.6875rem;
+}
+
+h1 {
+    margin-top: 4.5rem;
+}
+
+.job-title {
+    opacity: 0.6;
+}
+
+.build-note {
+    font-size: $small;
+}
+
+.pipeline {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.link-button {
+    display: inline-block;
+    background-color: plum;
+    width: 100%;
+    padding: 0.75rem 0;
+    border-radius: 3px;
 }

@@ -10,50 +10,65 @@
 </head>
 
 <body>
-    <nav class="site-nav flex-row-between">
-        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-        </svg>
-
-        <p class="contact-info">
-            <strong class="block">danine.noble@gmail.com</strong>
-            780.292.2114
-        </p>
+    <nav class="site-nav">
+        <div class="wrapper flex-row-between">
+            <svg id="mobile-menu-button" class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+    
+            <p class="contact-info">
+                <strong class="block">danine.noble@gmail.com</strong>
+                780.292.2114
+            </p>
+        </div>
     </nav>
 
+    <aside id="mobile-sub-menu" class="mobile-sub-menu">
+        <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li><a href="#">Bakery</a></li>
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+    </aside>   
+
     <header class="site-header">
-        <picture>
-            <source class="circle underscore" srcset="" type="image/webp" />
-            <source class="circle underscore" srcset="" type="image/" />
-            <img class="circle underscore" src="https://via.placeholder.com/150x150" alt="Headshot">
+        <picture class="headshot underscore">
+            <source class="circle" srcset="" type="image/webp" />
+            <source class="circle" srcset="" type="image/" />
+            <img class="circle" src="https://via.placeholder.com/150x150" alt="Headshot">
         </picture>
 
         <h1>
             Danine Noble
-            <span class="block job-title">Front End Web Dev</span>
+            <span class="block job-title">Front End Web Designer &amp; Developer</span>
         </h1>
 
-        <div>
+        <span class="build-note">build pipeline</span>
+        <div class="pipeline grid-4column">
+            <img src="img/vscode-brands.svg" alt="VSCode icon">
+            <img src="img/sass-brands.svg" alt="SASS icon">
+            <img src="img/gulp-brands.svg" alt="Gulp icon">
+            <img src="img/netlify-brands.svg" alt="Netlify icon">
+
             <a class="link-button" href="#">Projects</a>
             <a class="link-button" href="#">A Thing</a>
         </div>
-
-        <ul class="flex-row-between">
-            <li><img src="img/vscode-brands.svg" alt="icon"></li>
-            <li><img src="img/sass-brands.svg" alt="icon"></li>
-            <li><img src="img/gulp-brands.svg" alt="icon"></li>
-            <li><img src="img/netlify-brands.svg" alt="icon"></li>
-        </ul>
-        <p>build pipeline</p>
     </header>
 
     <main>
-        <section class="skills">
+        <section class="skills wrapper">
             <h2 class="underscore">Skills Summary</h2>
 
             <h3 class="hidden">User Experience</h3>
-            <!--image-->
+            <span>95%</span>
+            <div class="empty-bar">
+                <div class="fill-bar ux-bar"></div>
+            </div>
             <p>
                 brief desc
             </p>
@@ -77,7 +92,7 @@
             </p>
         </section>
 
-        <section class="find-me">
+        <section class="find-me wrapper">
             <h2 class="underscore">Where to Find Me</h2>
             <p>
                 things about me
@@ -87,7 +102,7 @@
             <img src="img/codepen-brands.svg" alt="icon">
         </section>
 
-        <section class="work-xp">
+        <section class="work-xp wrapper">
             <h2 class="underscore">Work Experience</h2>
             <p>
                 brief blurb
@@ -118,7 +133,7 @@
             </div>
         </section>
 
-        <section class="education">
+        <section class="education wrapper">
             <h2 class="underscore">Education</h2>
             <p>
                 brief desc about goals
@@ -127,7 +142,7 @@
 
         </section>
 
-        <section class="contact">
+        <section class="contact wrapper">
             <h2 class="underscore">Get In Touch</h2>
 
             <form id="contact" class="contact" action="">
@@ -145,14 +160,13 @@
         </section>
     </main>
 
-    <footer>
-        <p>Copyright: Danine Noble &copy;2019, All rights reserved</p>
-        <p>danine.noble@gmail.com</p>
-        <p>780.292.2114</p>
+    <footer class="wrapper">
+        <p>Copyright: Danine Noble &copy;2019, All rights reserved</p> 
     </footer>
 
     <script src="js/modernizr-custom.js"></script>
     <script src="js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </body>
 
 </html>
