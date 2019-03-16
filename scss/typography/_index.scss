@@ -27,4 +27,7 @@ h5 { font-size: $h5; }
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: $small;
+  color: $link-color;
 }

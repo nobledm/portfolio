@@ -15,6 +15,7 @@ body { background-color: rgb(231, 231, 231);}
 
 .flex-row-between {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -46,7 +47,8 @@ body { background-color: rgb(231, 231, 231);}
 
 /* GENERAL STYLES */
 .wrapper {
-    width: 95%;
+    position: relative;
+    width: 97%;
     max-width: 75rem;
     margin: 0 auto;
 }

@@ -9,9 +9,9 @@ window.addEventListener("DOMContentLoaded", function(event) {
     document.querySelector("#mobile-menu-button").onclick = () => {
         isOpen = !isOpen;
         if (!isOpen) {
-            TweenMax.to(menu,  0.6, {left:"-50%",  ease:Power4.easeIn});
+            TweenMax.to(menu,  0.6, {top:"-25rem",  ease:Power4.easeIn});
         } else {
-            TweenMax.to(menu,  0.4,  {left:0, ease:Power2.easeOut});
+            TweenMax.to(menu,  0.4,  {top:'3.5rem', ease:Power2.easeOut});
         }
     } 
 });
