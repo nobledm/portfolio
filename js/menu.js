@@ -1,20 +1,6 @@
 /*  https://greensock.com/docs/Easing/Bounce
     easing graph
 */
-
-// window.addEventListener("DOMContentLoaded", function(event) {
-//     const menu = document.querySelector('#mobile-sub-menu');
-//     let isOpen = false;
-    
-//     document.querySelector("#mobile-menu-button").onclick = () => {
-//         isOpen = !isOpen;
-//         if (!isOpen) {
-//             TweenMax.to(menu,  0.6, {top:"-25rem",  ease:Power4.easeIn});
-//         } else {
-//             TweenMax.to(menu,  0.4,  {top:'3.5rem', ease:Power2.easeOut});
-//         }
-//     } 
-// });
  
 'use strict';
  
@@ -42,7 +28,7 @@ function onLeavePanel(){
 }
 const openMobileMenu=(e)=>{
   menuPanel.addEventListener("mouseleave", onLeavePanel)
-   TweenLite.to(menuPanel, 0.4, {top:40, ease: Power1.easeOut});
+   TweenLite.to(menuPanel, 0.6, {top:40, ease: Power1.easeOut});
    menuOpen = true;
 }
  
@@ -54,7 +40,7 @@ const closeMobileMenu=(e)=>{
       ease: Power1.easeOut,
     }
 )
-  menuOpen =false;
+  menuOpen = false;
 }
 });
  

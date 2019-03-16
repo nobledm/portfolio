@@ -2,13 +2,14 @@
 
 .site-nav {
     position: fixed;
+    top: 0;
     width: 100%;
     font-size: $small;
     z-index: 110;
 
     .wrapper { 
       background-color: #fff; 
-      padding: 0.75rem;
+      padding: 1rem 0.75rem;
       border-radius: 0 0 0.25rem 0.25rem;
     }
 

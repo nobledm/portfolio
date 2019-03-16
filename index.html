@@ -103,8 +103,8 @@
         </ul>
     </aside>
 
-    <header class="site-header">
-        <picture class="headshot underscore-center">
+    <header class="site-header wrapper">
+        <picture class="headshot underscore">
             <source class="circle" srcset="" type="image/webp" />
             <source class="circle" srcset="" type="image/" />
             <img class="circle" src="https://via.placeholder.com/150x150" alt="Headshot">
@@ -113,22 +113,26 @@
         <h1>Danine Noble</h1>
         <p class="job-titles">#web-designer | #front-end-developer</p>
         
-
         <span class="build-note">build pipeline</span>
-        <div class="pipeline grid-4column">
-            <img src="img/vscode-brands.svg" alt="VSCode icon" title="VSCode">
-            <img src="img/sass-brands.svg" alt="Sass icon" title="Sass">
-            <img src="img/gulp-brands.svg" alt="Gulp icon" title="Gulp">
-            <img src="img/netlify-brands.svg" alt="Netlify icon" title="Netlify">
+        <ul class="pipeline flex-row-between">
+            <li><img src="img/vscode-brands.svg" alt="VSCode icon" title="VSCode"></li>
+            <li><img src="img/sass-brands.svg" alt="Sass icon" title="Sass"></li>
+            <li><img src="img/gulp-brands.svg" alt="Gulp icon" title="Gulp"></li>
+            <li><img src="img/netlify-brands.svg" alt="Netlify icon" title="Netlify"></li>
+        </ul>
 
+        <aside class="flex-row-between border-fade">
             <a class="link-button" href="#">Projects</a>
             <a class="link-button" href="#">A Thing</a>
-        </div>
+        </aside>
     </header>
 
     <main>
         <section id="skills" class="skills wrapper">
-            <h2>Skills Summary</h2>
+            <h2 class='underscore'>
+                My Skills
+                <span class="title-note">Summary</span>
+            </h2>
 
             <h3 class="hidden">User Experience</h3>
             <span>95%</span>
@@ -159,7 +163,10 @@
         </section>
 
         <section id="find-me" class="find-me wrapper">
-            <h2>Where to Find Me</h2>
+            <h2 class="underscore">
+                Where to Find Me
+                <span class="title-note">Summary</span>
+            </h2>
             <p>
                 things about me
             </p>
