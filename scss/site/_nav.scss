@@ -4,7 +4,7 @@
     position: fixed;
     width: 100%;
     font-size: $small;
-    z-index: 100;
+    z-index: 110;
 
     .wrapper { 
       background-color: #fff; 
@@ -25,20 +25,21 @@
 }
 
 /* Mobile Menu */
-.mobile-sub-menu {
+.menu-panel {
   position: fixed;
-  top: 3.5rem;
+  width: inherit;
+  top: -25rem;
   padding-top: 1rem;
   border-radius: 0 0 0.25rem 0.25rem;
   background-color: #fff;
-  z-index: 101;
+  z-index: 100;
 }
 
-.mobile-sub-menu li {
+.menu-panel li {
   flex: 33%;
   text-align: center;
 }
-.mobile-sub-menu li a {
+.menu-panel li a {
   display: block;
   padding: 0.75rem 1.5rem;
   margin-bottom: 0.5rem;
@@ -49,13 +50,8 @@
   }
 }
 
-.mobile-sub-menu {
-  width: inherit;
-  top: -25rem;
-}
-
-.mobile-sub-menu a:hover,
-.mobile-sub-menu a:active {
+.menu-panel a:hover,
+.menu-panel a:active {
   color: lightgreen;
   fill: lightgreen;
 }
