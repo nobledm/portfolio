@@ -16,11 +16,22 @@
     .title-note {
         position: absolute;
         display: inline-block;
-        padding: 0 0.5rem;
+        padding: 0 0.125rem 0 0.5rem;
         text-transform: uppercase;
         right: 0;
         bottom: -1rem;
         background-color: #fff;
         z-index: 10;
     }
+}
+
+.skills,
+.find-me,
+.work-xp,
+.education,
+.contact {
+    background: #fff;
+    border-radius: 0.25rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
 }

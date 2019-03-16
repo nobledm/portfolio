@@ -96,7 +96,7 @@
             </li>
             <li class="mobile-link">
                 <a href="#contact">
-                    <svg class="icon block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill-opacity=".9" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
+                    <svg class="icon block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill-opacity=".9" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10pv-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
                     Contact
                 </a>
             </li>
@@ -121,7 +121,7 @@
             <li><img src="img/netlify-brands.svg" alt="Netlify icon" title="Netlify"></li>
         </ul>
 
-        <aside class="flex-row-between border-fade">
+        <aside class="flex-row-between border-fade-h">
             <a class="link-button" href="#">Projects</a>
             <a class="link-button" href="#">A Thing</a>
         </aside>
@@ -134,38 +134,53 @@
                 <span class="title-note">Summary</span>
             </h2>
 
-            <h3 class="hidden">User Experience</h3>
-            <span>95%</span>
-            <div class="empty-bar">
-                <div class="fill-bar ux-bar"></div>
-            </div>
-            <p>
-                brief desc
-            </p>
+            <h4>Design</h4>
+            <ul class="skill-list">
+                <li><p>Web Design</p>
+                    <div class="empty-bar">
+                        <div class="fill-bar fill-90"></div>
+                    </div>
+                </li>
+                <li><p>Photoshop</p>
+                    <div class="empty-bar">
+                        <div class="fill-bar fill-95"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Illustrator</p>
+                    <div class="empty-bar">
+                        <div class="fill-bar fill-80"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Graphic Design</p>
+                    <div class="empty-bar">
+                        <div class="fill-bar fill-80"></div>
+                    </div>
+                </li>
+            </ul>
 
-            <h3 class="hidden">Interface Design</h3>
-            <!--image-->
-            <p>
-                brief desc
-            </p>
-
-            <h3 class="hidden">Front End Dev</h3>
-            <!--image-->
-            <p>
-                brief desc
-            </p>
-
-            <h3 class="hidden">Site Analytics</h3>
-            <!--image-->
-            <p>
-                brief desc
-            </p>
+            <h4>Code</h4>
+            <ul class="skill-list">
+                <li>
+                    <p>HTML & CSS</p>
+                    <div class="empty-bar">
+                        <div class="fill-bar fill-95"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Javascript</p>
+                    <div class="empty-bar">
+                        <div class="fill-bar fill-50"></div>
+                    </div>
+                </li>
+            </ul>
         </section>
 
         <section id="find-me" class="find-me wrapper">
             <h2 class="underscore">
-                Where to Find Me
-                <span class="title-note">Summary</span>
+                Communities
+                <span class="title-note">Social</span>
             </h2>
             <p>
                 things about me
@@ -176,7 +191,10 @@
         </section>
 
         <section id="exp" class="work-xp wrapper">
-            <h2>Work Experience</h2>
+            <h2 class="underscore">
+                Experience
+                <span class="title-note">Work</span>
+            </h2>
             <p>
                 brief blurb
             </p>
@@ -207,7 +225,10 @@
         </section>
 
         <section id="education" class="education wrapper">
-            <h2>Education</h2>
+            <h2 class="underscore">
+                Education
+                <span class="title-note">History</span>
+            </h2>
             <p>
                 brief desc about goals
             </p>
@@ -216,9 +237,12 @@
         </section>
 
         <section id="contact" class="contact wrapper">
-            <h2>Get In Touch</h2>
+            <h2 class="underscore">
+                Get In Touch
+                <span class="title-note">Email</span>
+            </h2>
 
-            <form id="contact" class="contact" action="">
+            <form id="contact-form" class="contact-form" action="">
                 <label for="name">Name*</label>
                 <input id="name" type="text" />
 

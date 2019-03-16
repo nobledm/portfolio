@@ -1,0 +1,23 @@
+.skill-list {
+    margin-bottom: 1.5rem;
+
+    li {
+        padding: 0.75rem 0;
+    }
+}
+
+.empty-bar {
+    width: 90%;
+    height: 0.375rem;
+    background: lightgrey;
+}
+
+.fill-bar {
+    height: 100%;
+    background-color: tomato;
+}
+
+.fill-50 { width: 50%; }
+.fill-80 { width: 80%; }
+.fill-90 { width: 90%; }
+.fill-95 { width: 95%; }
