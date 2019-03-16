@@ -6,6 +6,8 @@
     height: 2.875rem;
 }
 
+body { background-color: rgb(231, 231, 231);}
+
 /* UTILITY STYLES */
 .block {
     display: block;
@@ -33,7 +35,7 @@
     &::after {
         content: '';
         position: absolute;
-        bottom: -0.75rem;
+        bottom: -0.625rem;
         left: 50%;
         height: 0.125rem;
         width: 5rem;

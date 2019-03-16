@@ -1,8 +1,8 @@
 @import '../vars/index';
 
 .site-nav {
-    background-color: cadetblue;
     position: fixed;
+    background-color: #fff;
     width: 100%;
     font-size: $small;
     z-index: 100;
@@ -24,6 +24,7 @@
   position: fixed;
   top: 4rem;
   padding-top: 1.2rem;
+  background-color: #fff;
   z-index: 101;
 }
 
@@ -42,6 +43,6 @@
 .mobile-sub-menu .current,
 .mobile-sub-menu a:hover,
 .mobile-sub-menu a:active {
-  background: black;
+  background: rgb(104, 95, 95);
   color: #fff;
 }

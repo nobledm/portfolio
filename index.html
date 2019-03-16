@@ -6,10 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+
+    <link rel="preload" href="./fonts/Lora-Regular.ttf" as="font" crossorigin>
+    <link rel="preload" href="./fonts/open-sans-v15-latin-regular.ttf" as="font" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Lora';
+            font-display: auto;
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lora Regular'), local('Lora-Regular'),
+                url('./fonts/lora-v13-latin-regular.woff2') format('woff2'),
+                url('./fonts/lora-v13-latin-regular.woff') format('woff'),
+                url('./fonts/Lora-Regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Lora';
+            font-display: auto;
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lora Bold'), local('Lora-Bold'),
+                url('./fonts/lora-v13-latin-700.woff2') format('woff2'), 
+                url('./fonts/lora-v13-latin-700.woff') format('woff'), 
+                url('./fonts/Lora-Bold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Open Sans';
+            font-display: auto;
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans Regular'), local('OpenSans-Regular'),
+                url('./fonts/open-sans-v15-latin-regular.woff2') format('woff2'), 
+                url('./fonts/open-sans-v15-latin-regular.woff') format('woff'), 
+                url('./fonts/open-sans-v15-latin-regular.ttf') format('truetype');
+        }
+    </style>
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="top">
     <nav class="site-nav">
         <div class="wrapper flex-row-between">
             <svg id="mobile-menu-button" class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -26,13 +62,12 @@
 
     <aside id="mobile-sub-menu" class="mobile-sub-menu">
         <ul>
-            <li><a class="current" href="#">Home</a></li>
-            <li><a href="#">Bakery</a></li>
-            <li><a href="#">Coffee</a></li>
-            <li><a href="#">Coupons</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Search</a></li>
+            <li><a class="current" href="#top">Top</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#find-me">Find Me</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </aside>   
 
@@ -43,10 +78,9 @@
             <img class="circle" src="https://via.placeholder.com/150x150" alt="Headshot">
         </picture>
 
-        <h1>
-            Danine Noble
-            <span class="block job-title">Front End Web Designer &amp; Developer</span>
-        </h1>
+        <h1>Danine Noble</h1>
+        <p class="job-titles">#web-designer | #front-end-developer</p>
+        
 
         <span class="build-note">build pipeline</span>
         <div class="pipeline grid-4column">
@@ -61,7 +95,7 @@
     </header>
 
     <main>
-        <section class="skills wrapper">
+        <section id="skills" class="skills wrapper">
             <h2>Skills Summary</h2>
 
             <h3 class="hidden">User Experience</h3>
@@ -92,7 +126,7 @@
             </p>
         </section>
 
-        <section class="find-me wrapper">
+        <section id="find-me" class="find-me wrapper">
             <h2>Where to Find Me</h2>
             <p>
                 things about me
@@ -102,7 +136,7 @@
             <img src="img/codepen-brands.svg" alt="icon">
         </section>
 
-        <section class="work-xp wrapper">
+        <section id="exp" class="work-xp wrapper">
             <h2>Work Experience</h2>
             <p>
                 brief blurb
@@ -133,7 +167,7 @@
             </div>
         </section>
 
-        <section class="education wrapper">
+        <section id="education" class="education wrapper">
             <h2>Education</h2>
             <p>
                 brief desc about goals
@@ -142,7 +176,7 @@
 
         </section>
 
-        <section class="contact wrapper">
+        <section id="contact" class="contact wrapper">
             <h2>Get In Touch</h2>
 
             <form id="contact" class="contact" action="">
@@ -164,9 +198,9 @@
         <p>Copyright: Danine Noble &copy;2019, All rights reserved</p> 
     </footer>
 
-    <script src="js/modernizr-custom.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script async src="js/modernizr-custom.js"></script>
+    <script async src="js/menu.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </body>
 
 </html>
