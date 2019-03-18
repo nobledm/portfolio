@@ -2,9 +2,7 @@
 @import 'site/index';
 @import 'typography/index';
 
-[alt~=icon] {
-    height: 1.5rem;
-}
+/* https://beshley.com/vcard/index-gradient.html# */
 
 body { 
     background-color: rgb(231, 231, 231);
@@ -15,10 +13,21 @@ body {
     display: block;
 }
 
-.flex-row-between {
+.flex-row-between,
+.flex-row-center {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+.flex-row-between { 
+    justify-content: space-between; 
+}
+.flex-row-center { 
+    justify-content: center; 
+    max-width: 21rem;
+}
+.flex-center-item {
+    text-align: center;
+    width: calc((100% - (1.5rem * 2)) / 3);
 }
 
 // .grid-4column {
@@ -71,4 +80,8 @@ body {
 
 .section {
     margin-bottom: 4.5rem;
+}
+
+footer {
+    font-size: $small;
 }

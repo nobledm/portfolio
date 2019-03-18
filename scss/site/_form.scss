@@ -1,0 +1,33 @@
+.contact-form {
+    label {
+        font-size: $small;
+        margin-bottom: 0.5rem;
+    }
+
+    .name, .email, .message {
+        border: 1px tomato;
+        border-style: none none solid none;
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    .message {
+        margin-bottom: 1.5rem;
+        border-style: solid;
+        height: 10rem;
+        font: 0.875rem $body-font;
+    }
+
+    [type=submit] {
+        border: none;
+        background: none;
+        text-transform: uppercase;
+        font-family: $heading;
+        font-weight: 700;
+        padding-left: 0;
+    }
+}
+
+.submit-arrow {
+    width: 1rem;
+}
