@@ -28,7 +28,7 @@ function onLeavePanel(){
 }
 const openMobileMenu=(e)=>{
   menuPanel.addEventListener("mouseleave", onLeavePanel)
-   TweenLite.to(menuPanel, 0.6, {top:40, ease: Power1.easeOut});
+   TweenLite.to(menuPanel, 0.6, {top: 0, ease: Power1.easeOut});
    menuOpen = true;
 }
  
