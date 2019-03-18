@@ -40,6 +40,26 @@
                 url('./fonts/open-sans-v15-latin-regular.woff') format('woff'), 
                 url('./fonts/open-sans-v15-latin-regular.ttf') format('truetype');
         }
+        @font-face {
+            font-family: 'Open Sans';
+            font-display: auto;
+            font-style: italic;
+            font-weight: 300;
+            src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'),
+                url('./fonts/open-sans-300italic.woff2') format('woff2'), 
+                url('./fonts/open-sans-300italic.woff') format('woff'), 
+                url('./fonts/open-sans-300italic.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Open Sans Condensed';
+            font-display: auto;
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'),
+                url('./fonts/open-sans-condensed-bold.woff2') format('woff2'), 
+                url('./fonts/open-sans-condensed-bold.woff') format('woff'), 
+                url('./fonts/open-sans-condensed-bold.ttf') format('truetype');
+        }
     </style>
 
     <link rel="stylesheet" href="css/style.min.css">
@@ -128,7 +148,7 @@
         </picture>
 
         <h1>Danine Noble</h1>
-        <p class="job-titles">#web-designer | #front-end-developer</p>
+        <p class="job-titles lighten">#web-designer | #front-end-developer</p>
         
         <span class="build-note">build pipeline</span>
         <ul class="pipeline flex-row-between">
@@ -278,7 +298,7 @@
             <h4>Code</h4>
             <ul class="skill-list">
                 <li>
-                    <p>HTML & CSS</p>
+                    <p>HTML &amp; CSS</p>
                     <div class="empty-bar">
                         <div class="fill-bar fill-95"></div>
                     </div>
@@ -324,39 +344,38 @@
                 Experience
                 <span class="title-note">Work</span>
             </h2>
-            <p>
-                brief blurb
-            </p>
 
-            <div>
-                <h4>Office Manager <span class="company">@ Safeguard Print Innovations</span></h4>
-                <p class="date">Apr 2011 - Mar 2018</p>
-                <p>
-                    In the first year I increased sales by 300% by creating more efficient systems such as: order management, tracking, inventory, standardized templates and processes. I also managed relations and conflict resolution between end users, designers, and vendors.
-                </p>
-            </div>
-
-            <div>
-                <h4>Executive Assistant <span class="company">for Gerald Bourret</span></h4>
-                <p class="date">Apr 2011 - Mar 2018</p>
-                <p>
-                    For the same employer I aided with administrative tasks for his second business. Created presentation templates and pre-listing packages that allowed him to increase his sales commissions into the $100,000 ‘Silver Club’ consistently throughout the years.
-                </p>
-            </div>
-
-            <div>
-                <h4>Website Admin <span class="company">for Hobby</span></h4>
-                <p class="date">Dec 2015 - Current</p>
-                <p>
-                    I help debug, tweak, and create personal templates for both users and other admin. I have increased community usage of these and official site templates for the specific forums by roughly 40%. I have also created image resources for plugins.
-                </p>
-            </div>
-
-            <div>
-                <h4>TBD <span class="company">@ TBD</span></h4>
-                <p class="date">May 2019 - Current</p>
-                <p>Proident sint aliquip sunt tempor cillum mollit esse deserunt consequat fugiat nisi.</p>
-            </div>
+            <ul class="xp-list border-fade-v">
+                <li class="border-fade-h">
+                    <h4>Office Manager <span class="lighten">@ Safeguard Print Innovations</span></h4>
+                    <p class="italic">Apr 2011 - Mar 2018</p>
+                    <p>
+                        In the first year I increased sales by 300% by creating more efficient systems such as: order management, tracking, inventory, standardized templates and processes. I also managed relations and conflict resolution between end users, designers, and vendors.
+                    </p>
+                </li>
+    
+                <li class="border-fade-h">
+                    <h4>Executive Assistant <span class="lighten">for Gerald Bourret</span></h4>
+                    <p class="italic">Apr 2011 - Mar 2018</p>
+                    <p>
+                        For the same employer I aided with administrative tasks for his second business. Created presentation templates and pre-listing packages that allowed him to increase his sales commissions into the $100,000 ‘Silver Club’ consistently throughout the years.
+                    </p>
+                </li>
+    
+                <li class="border-fade-h">
+                    <h4>Website Admin <span class="lighten">for Hobby</span></h4>
+                    <p class="italic">Dec 2015 - Current</p>
+                    <p>
+                        I help debug, tweak, and create personal templates for both users and other admin. I have increased community usage of these and official site templates for the specific forums by roughly 40%. I have also created image resources for plugins.
+                    </p>
+                </li>
+    
+                <li class="border-fade-h">
+                    <h4>TBD <span class="lighten">@ TBD</span></h4>
+                    <p class="italic">May 2019 - Current</p>
+                    <p>Proident sint aliquip sunt tempor cillum mollit esse deserunt consequat fugiat nisi.</p>
+                </li>
+            </ul>
         </section>
 
         <section id="education" class="education wrapper">
@@ -365,18 +384,19 @@
                 <span class="title-note">History</span>
             </h2>
             
-            <div>
-                <h4>Bachelor of Art & Design</h4>
-                <strong>Minor in Mathematical Science</strong>
-                <p>@ U of A</p>
-                <p>Convocated Nov. 2013</p>
-            </div>
-
-            <div>
-                <h4>Web Design/Dev Diploma</h4>
-                <p>@ NAIT</p>
-                <p>Current</p>
-            </div>
+            <ul class="edu-list border-fade-v">
+                <li class="border-fade-h">
+                    <h4>Bachelor of Art &amp; Design</h4>
+                    <p class="italic">University of Alberta</p>
+                    <p class="lighten">Convocated Nov. 2013</p>
+                </li>
+    
+                <li class="border-fade-h">
+                    <h4>Web Design/Dev Diploma</h4>
+                    <p class="lighten">NAIT</p>
+                    <p class="italic">Current</p>
+                </li>
+            </ul>
 
         </section>
 

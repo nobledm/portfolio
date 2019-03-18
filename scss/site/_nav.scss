@@ -5,6 +5,7 @@
     top: 0;
     width: 100%;
     font-size: $small;
+    user-select: none;
     z-index: 110;
 
     .wrapper { 
@@ -32,11 +33,11 @@
   z-index: 100;
 }
 
-.menu-panel li {
+.mobile-link {
   flex: 33%;
   text-align: center;
 }
-.menu-panel li a {
+.mobile-link a {
   display: block;
   padding: 0.75rem 1.5rem;
   margin-bottom: 0.5rem;
