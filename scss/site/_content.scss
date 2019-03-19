@@ -43,11 +43,13 @@
 
 .social-icon {
     width: 3rem;
+    max-height: 3rem;
 }
 
 .skill-list li,
 .xp-list li,
-.edu-list li {
+.edu-list li,
+.social-desc {
     padding: 1rem 0.5rem 1.5rem 1rem;
 }
 .skill-list li:last-of-type,

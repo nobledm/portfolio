@@ -51,7 +51,19 @@
 }
 
 .menu-panel a:hover,
-.menu-panel a:active {
+.menu-panel a:active,
+.list-view a:hover,
+.list-view a:active {
   color: lightgreen;
   fill: lightgreen;
 }
+
+/* List View */
+.list-view {
+  display: none;
+
+  .icon {
+    margin: 0 auto;
+  }
+}
+
