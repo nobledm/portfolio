@@ -1,7 +1,7 @@
 @import '../vars/index';
 
 html {
-  background-color: #fff;
+  background-color: rgb(231, 231, 231);
   font-size: 16px;
 }
 
@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: $dark-grey;
+  margin-bottom: 3rem;
 }
 
 h1, h2, h3 {
@@ -56,4 +57,8 @@ a {
 
 .title-note {
   font-size: 16px;
+}
+
+footer {
+  font-size: $small;
 }

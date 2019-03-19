@@ -45,7 +45,27 @@
     width: 3rem;
 }
 
-.work-xp p:first-of-type,
-.edu-list p:first-of-type {
-    line-height: 3rem;
+.skill-list li,
+.work-xp li,
+.edu-list li {
+    padding: 1rem 0.5rem 1.5rem 1rem;
+}
+
+.timeline-dot {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -1.25rem;
+        top: 0.7rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        background: tomato;
+        border-radius: 50%;
+    }
+}
+
+.xp-list p:first-of-type {
+    margin-bottom: 1.5rem;
 }
