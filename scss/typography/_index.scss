@@ -36,13 +36,16 @@ h2, h3 {
 
 h1 { 
   font-size: $h1; 
+  line-height: 4.5rem;
 }
 h2 { 
   font-size: $h2; 
-  margin-bottom: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2.8rem;
 }
 h3 { 
   font-size: $h3; 
+  line-height: 3rem;
 }
 h4 { 
   font-size: $h4; 

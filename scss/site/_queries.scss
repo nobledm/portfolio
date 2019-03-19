@@ -31,6 +31,15 @@
         border-radius: 0 0.25rem 0 0;
         z-index: 5;
     }
+
+    /* Vertical Rhythm Adjustments */
+    .margin-btm {
+        margin-bottom: 0.5rem;
+    }
+
+    .skills {
+        padding-bottom: 2.1rem;
+    }
 }
 
 @media(min-width: 1000px) {
