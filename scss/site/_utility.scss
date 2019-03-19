@@ -15,8 +15,16 @@
     display: flex;
     flex-wrap: wrap;
 }
-.flex-row-between { 
+.flex-row-between,
+.media-query-row { 
     justify-content: space-between; 
+}
+.media-query-row {
+    display: block;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 .flex-row-center { 
     justify-content: center; 

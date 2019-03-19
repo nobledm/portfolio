@@ -46,9 +46,14 @@
 }
 
 .skill-list li,
-.work-xp li,
+.xp-list li,
 .edu-list li {
     padding: 1rem 0.5rem 1.5rem 1rem;
+}
+.skill-list li:last-of-type,
+.xp-list li:last-of-type,
+.edu-list li:last-of-type {
+    padding-bottom: 0;
 }
 
 .timeline-dot {

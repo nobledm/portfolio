@@ -134,7 +134,7 @@
             </li>
             <li class="mobile-link">
                 <a href="#contact">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <svg class="icon block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path fill="none" d="M0 0h24v24H0V0z"/><path fill-opacity=".9" d="M12 1.95c-5.52 0-10 4.48-10 10s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57v-1.43c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57v-1.43c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
                         </svg>
                     Contact
@@ -233,47 +233,53 @@
                 <span class="title-note">Brief</span>
             </h2>
 
-            <h4>Design</h4>
-            <ul class="skill-list border-fade-v">
-                <li class="border-fade-h"><p>Web Design</p>
-                    <div class="empty-bar">
-                        <div class="fill-bar fill-90"></div>
-                    </div>
-                </li>
-                <li class="border-fade-h"><p>Photoshop</p>
-                    <div class="empty-bar">
-                        <div class="fill-bar fill-95"></div>
-                    </div>
-                </li>
-                <li class="border-fade-h">
-                    <p>Illustrator</p>
-                    <div class="empty-bar">
-                        <div class="fill-bar fill-70"></div>
-                    </div>
-                </li>
-                <li class="border-fade-h">
-                    <p>Graphic Design</p>
-                    <div class="empty-bar">
-                        <div class="fill-bar fill-70"></div>
-                    </div>
-                </li>
-            </ul>
-
-            <h4>Code</h4>
-            <ul class="skill-list border-fade-v">
-                <li class="border-fade-h">
-                    <p>HTML &amp; CSS</p>
-                    <div class="empty-bar">
-                        <div class="fill-bar fill-95"></div>
-                    </div>
-                </li>
-                <li class="border-fade-h">
-                    <p>Javascript</p>
-                    <div class="empty-bar">
-                        <div class="fill-bar fill-50"></div>
-                    </div>
-                </li>
-            </ul>
+            <div class="media-query-row">
+                <div class="column">
+                    <h4>Design</h4>
+                    <ul class="skill-list border-fade-v">
+                        <li class="border-fade-h"><p>Web Design</p>
+                            <div class="empty-bar">
+                                <div class="fill-bar fill-90"></div>
+                            </div>
+                        </li>
+                        <li class="border-fade-h"><p>Photoshop</p>
+                            <div class="empty-bar">
+                                <div class="fill-bar fill-95"></div>
+                            </div>
+                        </li>
+                        <li class="border-fade-h">
+                            <p>Illustrator</p>
+                            <div class="empty-bar">
+                                <div class="fill-bar fill-70"></div>
+                            </div>
+                        </li>
+                        <li class="border-fade-h">
+                            <p>Graphic Design</p>
+                            <div class="empty-bar">
+                                <div class="fill-bar fill-70"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class='column'>
+                    <h4>Code</h4>
+                    <ul class="skill-list border-fade-v">
+                        <li class="border-fade-h">
+                            <p>HTML &amp; CSS</p>
+                            <div class="empty-bar">
+                                <div class="fill-bar fill-95"></div>
+                            </div>
+                        </li>
+                        <li class="border-fade-h">
+                            <p>Javascript</p>
+                            <div class="empty-bar">
+                                <div class="fill-bar fill-50"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="find-me" class="find-me wrapper">
@@ -303,66 +309,67 @@
             </ul>
         </section>
 
-        <section id="exp" class="work-xp wrapper">
-            <h2 class="underscore">
-                Experience
-                <span class="title-note">Work</span>
-            </h2>
-
-            <ul class="xp-list border-fade-v">
-                <li class="border-fade-h">
-                    <h4 class="timeline-dot">Office Manager <span class="lighten">for Safeguard Print Innovations</span></h4>
-                    <p class="italic">Apr 2011 - Mar 2018</p>
-                    <p>
-                        In the first year I increased sales by 300% by creating more efficient systems such as: order management, tracking, inventory, standardized templates and processes. I also managed relations and conflict resolution between end users, designers, and vendors.
-                    </p>
-                </li>
+        <div class="media-query-row">
+            <section id="exp" class="work-xp wrapper xp-column">
+                <h2 class="underscore">
+                    Experience
+                    <span class="title-note">Work</span>
+                </h2>
     
-                <li class="border-fade-h">
-                    <h4 class="timeline-dot">Executive Assistant <span class="lighten">for Gerald Bourret</span></h4>
-                    <p class="italic">Apr 2011 - Mar 2018</p>
-                    <p>
-                        For the same employer I aided with administrative tasks for his second business. Created presentation templates and pre-listing packages that allowed him to increase his sales commissions into the $100,000 ‘Silver Club’ consistently throughout the years.
-                    </p>
-                </li>
+                <ul class="xp-list border-fade-v">
+                    <li class="border-fade-h">
+                        <h4 class="timeline-dot">Office Manager <span class="lighten">for Safeguard Print Innovations</span></h4>
+                        <p class="italic">Apr 2011 - Mar 2018</p>
+                        <p>
+                            In the first year I increased sales by 300% by creating more efficient systems such as: order management, tracking, inventory, standardized templates and processes. I also managed relations and conflict resolution between end users, designers, and vendors.
+                        </p>
+                    </li>
+        
+                    <li class="border-fade-h">
+                        <h4 class="timeline-dot">Executive Assistant <span class="lighten">for Gerald Bourret</span></h4>
+                        <p class="italic">Apr 2011 - Mar 2018</p>
+                        <p>
+                            For the same employer I aided with administrative tasks for his second business. Created presentation templates and pre-listing packages that allowed him to increase his sales commissions into the $100,000 ‘Silver Club’ consistently throughout the years.
+                        </p>
+                    </li>
+        
+                    <li class="border-fade-h">
+                        <h4 class="timeline-dot">Website Admin <span class="lighten">for Hobby</span></h4>
+                        <p class="italic">Dec 2015 - Current</p>
+                        <p>
+                            I help debug, tweak, and create personal templates for both users and other admin. I have increased community usage of these and official site templates for the specific forums by roughly 40%. I have also created image resources for plugins.
+                        </p>
+                    </li>
+        
+                    <li class="border-fade-h">
+                        <h4 class="timeline-dot">TBD <span class="lighten">@ TBD</span></h4>
+                        <p class="italic">May 2019 - Current</p>
+                        <p>Proident sint aliquip sunt tempor cillum mollit esse deserunt consequat fugiat nisi.</p>
+                    </li>
+                </ul>
+            </section>
     
-                <li class="border-fade-h">
-                    <h4 class="timeline-dot">Website Admin <span class="lighten">for Hobby</span></h4>
-                    <p class="italic">Dec 2015 - Current</p>
-                    <p>
-                        I help debug, tweak, and create personal templates for both users and other admin. I have increased community usage of these and official site templates for the specific forums by roughly 40%. I have also created image resources for plugins.
-                    </p>
-                </li>
-    
-                <li class="border-fade-h">
-                    <h4 class="timeline-dot">TBD <span class="lighten">@ TBD</span></h4>
-                    <p class="italic">May 2019 - Current</p>
-                    <p>Proident sint aliquip sunt tempor cillum mollit esse deserunt consequat fugiat nisi.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="education" class="education wrapper">
-            <h2 class="underscore">
-                Education
-                <span class="title-note">History</span>
-            </h2>
-            
-            <ul class="edu-list border-fade-v">
-                <li class="border-fade-h">
-                    <h4 class="timeline-dot">Web Design/Dev Diploma</h4>
-                    <p class="italic">NAIT</p>
-                    <p class="lighten">Current</p>
-                </li>
-                <li class="border-fade-h">
-                    <h4 class="timeline-dot">Bachelor of Art &amp; Design</h4>
-                    <p class="italic">University of Alberta</p>
-                    <p class="lighten">Convocated Nov. 2013</p>
-                    <p class="hidden">this is a test</p>
-                </li>
-            </ul>
-
-        </section>
+            <section id="education" class="education wrapper edu-column">
+                <h2 class="underscore">
+                    Education
+                    <span class="title-note">History</span>
+                </h2>
+                
+                <ul class="edu-list border-fade-v">
+                    <li class="border-fade-h">
+                        <h4 class="timeline-dot">Web Design/Dev Diploma</h4>
+                        <p class="italic">NAIT</p>
+                        <p class="lighten">Current</p>
+                    </li>
+                    <li class="border-fade-h">
+                        <h4 class="timeline-dot">Bachelor of Art &amp; Design</h4>
+                        <p class="italic">University of Alberta</p>
+                        <p class="lighten">Convocated Nov. 2013</p>
+                        <p class="hidden">this is a test</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
         <section id="contact" class="contact wrapper">
             <h2 class="underscore">
