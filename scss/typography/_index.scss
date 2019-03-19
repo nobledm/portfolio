@@ -1,15 +1,14 @@
 @import '../vars/index';
 
 html {
-  background-color: rgb(231, 231, 231);
-  font-size: 16px;
+  background-color: $khaki;
 }
 
 body {
   font-family: $body-font;
   font-weight: 400;
   line-height: 1.5;
-  color: $dark-grey;
+  color: $purple-taupe;
   margin-bottom: 3rem;
 }
 
@@ -55,11 +54,29 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: $small;
-  color: $link-color;
+  color: $purple;
+  transition-duration: 0.3s;
+}
+
+a:hover,
+a:active {
+  color: $tan;
+  fill: $tan;
+}
+
+.site-nav,
+.site-nav a,
+.menu-panel a {
+  color: $light-tan;
+}
+.site-nav a:hover,
+.menu-panel a:hover,
+.toggle-menu-icon:hover {
+  color: $purple;
 }
 
 .title-note {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 footer {

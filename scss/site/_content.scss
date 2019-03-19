@@ -10,7 +10,7 @@
         left: 0;
         height: 0.125rem;
         width: 100%;
-        background-color: tomato;
+        background-color: $purple-taupe;
     }
 
     .title-note {
@@ -21,18 +21,17 @@
         right: 0;
         bottom: -1.55rem;
         line-height: 1.5rem;
-        background-color: #fff;
+        background-color: $light-tan;
         z-index: 10;
     }
 }
 
-.site-header,
 .skills,
 .find-me,
 .work-xp,
 .education,
 .contact {
-    background: #fff;
+    background: $light-tan;
     border-radius: 0.25rem;
     padding: 1.5rem 1rem;
     margin-bottom: 1.5rem;
@@ -73,7 +72,7 @@
         top: 0.7rem;
         width: 0.625rem;
         height: 0.625rem;
-        background: tomato;
+        background: $purple;
         border-radius: 50%;
     }
 }

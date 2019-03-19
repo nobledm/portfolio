@@ -9,7 +9,7 @@
     z-index: 110;
 
     .wrapper { 
-      background-color: #fff; 
+      background-color: $purple-taupe; 
       padding: 1rem 0.75rem;
       border-radius: 0 0 0.25rem 0.25rem;
     }
@@ -29,7 +29,7 @@
   top: -40rem;
   left: 0;
   padding-top: 5rem;
-  background-color: #ccc;
+  background-color: $purple-taupe;
   z-index: 100;
   margin-left: auto;
   margin-right: auto;
@@ -43,19 +43,10 @@
   display: block;
   padding: 0.75rem 1.5rem;
   margin-bottom: 0.5rem;
-  transition-duration: 0.3s;
 
   .icon {
     margin: 0 auto;
   }
-}
-
-.menu-panel a:hover,
-.menu-panel a:active,
-.list-view a:hover,
-.list-view a:active {
-  color: lightgreen;
-  fill: lightgreen;
 }
 
 /* List View */

@@ -5,10 +5,14 @@
     }
 
     .name, .email, .message {
-        border: 1px tomato;
+        border: 1px $purple;
         border-style: none none solid none;
         width: 100%;
         margin-bottom: 2.5rem;
+    }
+
+    .name, .email {
+        background: none;
     }
 
     .message {
@@ -16,18 +20,29 @@
         border-style: solid;
         height: 10rem;
         font: 0.875rem $body-font;
-    }
+    }    
+}
 
-    [type=submit] {
-        border: none;
-        background: none;
-        text-transform: uppercase;
-        font-family: $heading;
-        font-weight: 700;
-        padding-left: 0;
-    }
+[type=submit] {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    color: $purple-taupe;
+    font-family: $heading;
+    font-weight: 700;
+    padding-left: 0;
 }
 
 .submit-arrow {
     width: 1rem;
+}
+
+.send:hover {
+    [type=submit] {
+        color: $tan;
+    }
+    
+    svg {
+        fill: $tan;
+    }
 }
