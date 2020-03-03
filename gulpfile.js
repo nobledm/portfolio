@@ -28,6 +28,16 @@ function images() {
     .pipe(gulp.dest(out));
 }
 
+function index() {
+  const out = build;
+
+  return gulp
+    .src(src + 'index.html')
+    .pipe(newer(out))
+    .pipe(devBuild ? noop() : htmlclean())
+    .pipe(gulp.dest(out));
+}
+
 function html() {
   const out = build + "pages/";
 
@@ -65,7 +75,7 @@ function css() {
     .pipe(
       postcss([
         assets({ loadPaths: ["images/"] }),
-        autoprefixer({ browsers: ["last 2 versions", "> 2%"] }),
+        autoprefixer(),
         mqpacker,
         cssnano
       ])
@@ -74,7 +84,7 @@ function css() {
     .pipe(gulp.dest(build + "css/"));
 }
 
-exports.html = gulp.series(images, html);
+exports.html = gulp.series(images, index, html);
 exports.js = js;
 exports.css = gulp.series(images, css);
 
@@ -82,6 +92,7 @@ exports.build = gulp.parallel(exports.html, exports.js, exports.css);
 
 function watch(done) {
   gulp.watch(src + "images/**/*", images);
+  gulp.watch(src + 'index.html', index);
   gulp.watch(src + "pages/**/*", html);
   gulp.watch(src + "js/**/*", js);
   gulp.watch(src + "scss/**/*", css);
