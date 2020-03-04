@@ -20,3 +20,10 @@
     @include line-rhythm(0);
   }
 }
+
+@mixin cover-box($mt) {
+  margin-top: -$mt;
+  padding: .5rem;
+  background-color: $white;
+  border: 2px double $lt-blue;
+}

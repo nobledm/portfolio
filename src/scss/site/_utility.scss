@@ -1,0 +1,17 @@
+.block {
+  display: block;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: .8rem 1.125rem;
+  color: $white;
+
+  .btn-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .8438rem;
+    fill: $white;
+  }
+}

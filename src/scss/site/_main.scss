@@ -1,0 +1,40 @@
+body {
+  padding: 1.125rem 1rem;
+}
+
+section {
+  margin-bottom: 3.375rem;
+}
+
+p {
+  margin-bottom: 1.6875rem;
+}
+
+.social {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1.125rem;
+}
+
+.git-icon {
+  padding: 2px;
+}
+
+.slack-icon {
+  width: 3rem;
+  height: 3rem;
+  margin: -.5rem;
+
+  .slack-st0 {
+    fill: #e01e5a;
+  }
+  .slack-st1 {
+    fill: #36c5f0;
+  }
+  .slack-st2 {
+    fill: #2eb67d;
+  }
+  .slack-st3 {
+    fill: #ecb22e;
+  }
+}

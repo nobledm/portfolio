@@ -1,39 +1,42 @@
 h1 {
-  @include text-style($font-inria, $h1);
+  @include text-style($font-inria, $h1, $pink);
 }
 
 h2 {
-  @include text-style($font-inria, $h2);
+  @include text-style($font-inria, $h2, $pink);
 }
 
 h3 {
-  @include text-style($font-inria, $h3);
+  font-weight: 700;
+  @include text-style($font-sans, $h3, $pink);
 }
 
 @media only screen and (min-width: 45rem) {
   h1 {
-    @include text-style($font-inria, $h1-md);
+    @include text-style($font-inria, $h1-md, $pink);
   }
-  
+
   h2 {
-    @include text-style($font-inria, $h2-md);
+    @include text-style($font-inria, $h2-md, $pink);
   }
-  
+
   h3 {
-    @include text-style($font-inria, $h3-md);
+    font-weight: 700;
+    @include text-style($font-sans, $h3-md, $pink);
   }
 }
 
 @media only screen and (min-width: 62rem) {
   h1 {
-    @include text-style($font-inria, $h1-lg);
+    @include text-style($font-inria, $h1-lg, $pink);
   }
-  
+
   h2 {
-    @include text-style($font-inria, $h2-lg);
+    @include text-style($font-inria, $h2-lg, $pink);
   }
-  
+
   h3 {
-    @include text-style($font-inria, $h3-lg);
+    font-weight: 700;
+    @include text-style($font-sans, $h3-lg, $pink);
   }
 }

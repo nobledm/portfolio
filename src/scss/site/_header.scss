@@ -1,0 +1,12 @@
+header {
+  text-align: right;
+  margin-bottom: 5.0625rem;
+}
+
+.accent-square {
+  background-color: $pink;
+  width: 150%;
+  height: 20rem;
+  margin-bottom: -70%;
+  transform: translateX(-60%) translateY(-40%) rotate(-50deg);
+}

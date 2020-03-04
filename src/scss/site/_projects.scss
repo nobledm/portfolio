@@ -1,0 +1,77 @@
+.projects {
+  box-shadow: 0 0 2px $blue;
+
+  & > * {
+    margin: 0 .5rem;
+  }
+
+  h2 {
+    @include cover-box(05rem);
+
+    display: inline-block;
+    margin-bottom: .5rem;
+  }
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.375rem;
+
+  picture {
+    opacity: .7;
+  }
+}
+
+.preview-title {
+  @include cover-box(3rem);
+
+  position: relative;
+  align-self: flex-end;
+  margin-right: -.58rem;
+  margin-bottom: .8438rem;
+  border-right: 0;
+  z-index: 10;
+
+  .inner {
+    display: inline-block;
+    margin-right: -2rem;
+    padding: .5rem 2rem .5rem 1rem;
+    background-color: $pink;
+    color: $white;
+  }
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+
+  .btn {
+    width: 48%;
+
+    &:first-of-type {
+      margin-right: 2%;
+    }
+  }
+}
+
+.repo-link,
+.demo-link {
+  @extend .btn;
+  margin-bottom: 1.5rem;
+}
+.repo-link {
+  background-color: #24292e;
+
+  &:hover {
+    background-color: darken($dk-grey, 100%);
+  }
+}
+
+.demo-link {
+  background-color: #0a7077;
+
+  &:hover {
+    background-color: darken($dk-grey, 100%);
+  }
+}

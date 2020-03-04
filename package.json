@@ -66,7 +66,7 @@
       "color-hex-case": "lower",
       "font-family-name-quotes": "always-where-recommended",
       "number-leading-zero": "never",
-      "string-quotes": "single",
+      "string-quotes": "double",
       "length-zero-no-unit": true,
       "unit-case": "lower",
       "declaration-block-semicolon-newline-after": "always-multi-line",
