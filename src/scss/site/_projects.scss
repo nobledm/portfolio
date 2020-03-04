@@ -1,22 +1,18 @@
-.projects {
-  box-shadow: 0 0 2px $blue;
-
-  & > * {
-    margin: 0 .5rem;
-  }
-
-  h2 {
-    @include cover-box(05rem);
-
-    display: inline-block;
-    margin-bottom: .5rem;
-  }
-}
-
 .project-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3.375rem;
+  margin-bottom: 5.0625rem;
+
+  h3 {
+    @include cover-box(0);
+
+    position: relative;
+    align-self: flex-start;
+    margin: 0 0 -2rem -.603rem;
+    padding-left: 2rem;
+    border-left: 0;
+    z-index: 10;;
+  }
 
   picture {
     opacity: .7;
@@ -72,6 +68,26 @@
   background-color: #0a7077;
 
   &:hover {
-    background-color: darken($dk-grey, 100%);
+    background-color: darken($lt-blue, 30%);
+  }
+}
+
+.projects {
+  box-shadow: 0 0 2px $blue;
+
+  & > * {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  h2 {
+    @include cover-box(05rem);
+
+    display: inline-block;
+    margin-bottom: .5rem;
+  }
+
+  & > .repo-link {
+    margin-bottom: 3.375rem;
   }
 }
