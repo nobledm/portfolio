@@ -3,28 +3,28 @@
   flex-direction: column;
   margin-bottom: 5.0625rem;
 
-  h3 {
-    @include cover-box(0);
-
-    position: relative;
-    align-self: flex-start;
-    margin: 0 0 -2rem -.603rem;
-    padding-left: 2rem;
-    border-left: 0;
-    z-index: 10;;
-  }
-
   picture {
     opacity: .7;
   }
 }
 
-.preview-title {
-  @include cover-box(3rem);
+.project-type {
+  @include cover-box(0);
 
   position: relative;
   align-self: flex-end;
-  margin-right: -.58rem;
+  margin: 0 -.603rem -1.5rem 0;
+  padding-right: 0.65rem;
+  border-right: 0;
+  z-index: 10;;
+}
+
+.preview-title {
+  @include cover-box(2.3rem);
+
+  position: relative;
+  align-self: flex-end;
+  margin-right: -.59rem;
   margin-bottom: .8438rem;
   border-right: 0;
   z-index: 10;
@@ -73,7 +73,7 @@
 }
 
 .projects {
-  box-shadow: 0 0 2px $blue;
+  box-shadow: 0 0 3px $blue;
 
   & > * {
     margin-left: .5rem;

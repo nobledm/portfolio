@@ -11,9 +11,8 @@ p {
 }
 
 .social {
-  width: 2rem;
-  height: 2rem;
-  margin-left: 1.125rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .git-icon {
@@ -21,9 +20,9 @@ p {
 }
 
 .slack-icon {
-  width: 3rem;
-  height: 3rem;
-  margin: -.5rem;
+  width: 4rem;
+  height: 4rem;
+  margin: -.4rem;
 
   .slack-st0 {
     fill: #e01e5a;
@@ -37,4 +36,9 @@ p {
   .slack-st3 {
     fill: #ecb22e;
   }
+}
+
+.social-btns {
+  display: flex;
+  justify-content: space-around;
 }
