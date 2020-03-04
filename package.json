@@ -7,8 +7,7 @@
     "last 2 version",
     "> 2%"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "portfolio",
     "static",
@@ -55,7 +54,6 @@
           ]
         }
       ],
-      "at-rule-no-unknown": true,
       "no-descending-specificity": true,
       "no-invalid-double-slash-comments": true,
       "color-named": "never",

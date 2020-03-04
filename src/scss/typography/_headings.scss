@@ -1,0 +1,39 @@
+h1 {
+  @include text-style($font-inria, $h1);
+}
+
+h2 {
+  @include text-style($font-inria, $h2);
+}
+
+h3 {
+  @include text-style($font-inria, $h3);
+}
+
+@media only screen and (min-width: 45rem) {
+  h1 {
+    @include text-style($font-inria, $h1-md);
+  }
+  
+  h2 {
+    @include text-style($font-inria, $h2-md);
+  }
+  
+  h3 {
+    @include text-style($font-inria, $h3-md);
+  }
+}
+
+@media only screen and (min-width: 62rem) {
+  h1 {
+    @include text-style($font-inria, $h1-lg);
+  }
+  
+  h2 {
+    @include text-style($font-inria, $h2-lg);
+  }
+  
+  h3 {
+    @include text-style($font-inria, $h3-lg);
+  }
+}

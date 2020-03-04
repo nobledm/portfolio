@@ -1,0 +1,22 @@
+@mixin line-rhythm($mb, $lh: 1.5) {
+  margin-bottom: $mb;
+  line-height: $lh;
+}
+
+@mixin text-style($family, $size, $color: #555) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+
+  @if $size > 1.6875rem {
+    @include line-rhythm(1.6875rem, 3.375rem);
+  }
+
+  @else if $size > 1.125rem {
+    @include line-rhythm(0, 1.6875rem);
+  }
+
+  @else {
+    @include line-rhythm(0);
+  }
+}
