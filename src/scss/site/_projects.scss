@@ -154,7 +154,9 @@
     margin-bottom: 3.375rem;
 
     @media only screen and (min-width: 53.0625rem) {
-      flex: 1 0 96%;
+      flex: 0 0 12.5rem;
+      padding: .8165rem;
+      margin: 0 80% 3.375rem .5rem;
     }
   }
 }
