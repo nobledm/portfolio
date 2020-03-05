@@ -8,10 +8,10 @@ h2 {
 
 h3 {
   font-weight: 700;
-  @include text-style($font-sans, $h3, $pink);
+  @include text-style($font-sans, $h3, $white);
 }
 
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 37.5rem) {
   h1 {
     @include text-style($font-inria, $h1-md, $pink);
   }
@@ -22,7 +22,7 @@ h3 {
 
   h3 {
     font-weight: 700;
-    @include text-style($font-sans, $h3-md, $pink);
+    @include text-style($font-sans, $h3-md, $white);
   }
 }
 
@@ -37,6 +37,6 @@ h3 {
 
   h3 {
     font-weight: 700;
-    @include text-style($font-sans, $h3-lg, $pink);
+    @include text-style($font-sans, $h3-lg, $white);
   }
 }

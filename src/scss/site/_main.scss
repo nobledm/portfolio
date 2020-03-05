@@ -3,7 +3,16 @@ body {
 }
 
 section {
-  margin-bottom: 8.4375rem;
+  margin: 0 auto 8.4375rem;
+}
+
+p,
+h1,
+.intro h2,
+.social-btns {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {

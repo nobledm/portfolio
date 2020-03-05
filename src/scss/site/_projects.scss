@@ -2,40 +2,73 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5.0625rem;
+  min-width: 16.625rem;
+  max-width: 31.25rem;
+
+  @media only screen and (min-width: 53.0625rem) {
+    flex: 1 1 45%;
+    // border: 1px rgba($blue, .6);
+    padding-top: 0;
+    
+    &:nth-child(2n-1) {
+      // border-style: none solid solid none;
+      box-shadow: 1px 1px 3px rgba($blue, .5);
+    }
+
+    &:nth-child(2n) {
+      // border-style: none none solid solid;
+      box-shadow: -1px 1px 3px rgba($blue, .5);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   picture {
     opacity: .7;
   }
+
+  h3 {
+    display: inline-block;
+    padding: .5rem .8rem .4rem 2rem;
+    background-color: $pink;
+
+    @media only screen and (min-width: 28.8125rem) {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.95rem;
+        height: 0;
+        width: 0;
+        border-width: .5rem .73rem;
+        border-style: solid;
+        border-color: $dk-pink $dk-pink transparent transparent;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.project-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -2rem -1.5rem;
+  z-index: 10;
 }
 
 .project-type {
-  @include cover-box(0);
+  @include cover-box();
 
   position: relative;
   align-self: flex-end;
-  margin: 0 -.603rem -1.5rem 0;
-  padding-right: 0.65rem;
+  margin-right: 1.38rem;
+  padding-right: .65rem;
   border-right: 0;
-  z-index: 10;;
-}
-
-.preview-title {
-  @include cover-box(2.3rem);
-
-  position: relative;
-  align-self: flex-end;
-  margin-right: -.59rem;
-  margin-bottom: .8438rem;
-  border-right: 0;
-  z-index: 10;
-
-  .inner {
-    display: inline-block;
-    margin-right: -2rem;
-    padding: .5rem 2rem .5rem 1rem;
-    background-color: $pink;
-    color: $white;
-  }
 }
 
 .btn-row {
@@ -55,6 +88,10 @@
 .demo-link {
   @extend .btn;
   margin-bottom: 1.5rem;
+
+  @media only screen and (min-width: 53.0625rem) {
+    margin-bottom: 0;
+  }
 }
 .repo-link {
   background-color: #24292e;
@@ -74,20 +111,50 @@
 
 .projects {
   box-shadow: 0 0 3px $blue;
+  max-width: 25.65rem;
+
+  @media only screen and (min-width: 53.0625rem) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 98%;
+  }
 
   & > * {
     margin-left: .5rem;
     margin-right: .5rem;
+
+    @media only screen and (min-width: 53.0625rem) {
+      margin-left: 0;
+      margin-right: 0;
+      padding: .5rem;
+
+      &:nth-child(2n-1) {
+        margin-right: 3rem;
+      }
+    }
   }
 
   h2 {
-    @include cover-box(05rem);
+    @include cover-box();
 
     display: inline-block;
+    margin-top: -1rem;
     margin-bottom: .5rem;
+
+    @media only screen and (min-width: 28.8125rem) {
+      margin-top: -1.5rem;
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 
   & > .repo-link {
     margin-bottom: 3.375rem;
+
+    @media only screen and (min-width: 53.0625rem) {
+      flex: 1 0 96%;
+    }
   }
 }

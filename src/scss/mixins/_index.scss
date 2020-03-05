@@ -8,7 +8,11 @@
   font-size: $size;
   color: $color;
 
-  @if $size > 1.6875rem {
+  @if $size > 3.375rem {
+    @include line-rhythm(1.6875rem, 5.0625rem);
+  }
+  
+  @else if $size > 1.6875rem {
     @include line-rhythm(1.6875rem, 3.375rem);
   }
 
@@ -21,8 +25,7 @@
   }
 }
 
-@mixin cover-box($mt) {
-  margin-top: -$mt;
+@mixin cover-box() {
   padding: .5rem;
   background-color: $white;
   border: 3px double rgba($blue, .5);

@@ -1,12 +1,20 @@
 header {
+  position: relative;
   text-align: right;
+  min-height: 12.5rem;
+  padding-top: 5rem;
   margin-bottom: 5.0625rem;
 }
 
 .accent-square {
+  position: absolute;
+  top: -1.125rem;
+  left: -1rem;
   background-color: $pink;
-  width: 150%;
-  height: 20rem;
-  margin-bottom: -70%;
-  transform: translateX(-60%) translateY(-40%) rotate(-50deg);
+  width: 50%;
+  height: 12.75rem;
+
+  @media only screen and (min-width: 37.5rem) {
+    height: 13rem;
+  }
 }

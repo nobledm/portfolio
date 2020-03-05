@@ -4,6 +4,14 @@ body {
   background-color: $white;
 }
 
+header strong {
+  font-size: $h3;
+
+  @media only screen and (min-width: 37.5rem) {
+    font-size: $h3-md;
+  }
+}
+
 a {
   text-decoration: none;
   color: $white;
