@@ -34,9 +34,4 @@ h3 {
   h2 {
     @include text-style($font-inria, $h2-lg, $pink);
   }
-
-  h3 {
-    font-weight: 700;
-    @include text-style($font-sans, $h3-lg, $white);
-  }
 }

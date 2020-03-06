@@ -8,13 +8,18 @@ header {
 
 .accent-square {
   position: absolute;
-  top: -1.125rem;
-  left: -1rem;
+  top: -1.5rem;
+  left: -2rem;
   background-color: $pink;
   width: 50%;
-  height: 12.75rem;
+  height: 13rem;
 
   @media only screen and (min-width: 37.5rem) {
-    height: 13rem;
+    height: 13.5rem;
+    width: 55%;
+  }
+
+  @media only screen and (min-width: 62rem) {
+    height: 15rem;
   }
 }

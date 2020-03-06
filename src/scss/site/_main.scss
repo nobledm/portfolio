@@ -1,9 +1,19 @@
 body {
-  padding: 1.125rem 1rem;
+  padding: 1.25rem 1.5rem;
 }
 
-section {
+section,
+.projects {
   margin: 0 auto 8.4375rem;
+
+  @media only screen and (min-width: 53.0625rem) {
+    margin-bottom: 5.0625rem;
+    max-width: 98%;
+  }
+
+  @media only screen and (min-width: 100rem) {
+    max-width: 93.4088rem;
+  }
 }
 
 p,
