@@ -1,0 +1,67 @@
+footer {
+  padding-left: 10%;
+  font-size: 1rem;
+  margin-right: -1.5rem;
+
+  @media only screen and (min-width: 26.5625rem) {
+    font-size: 1.125rem;
+  }
+
+  @media only screen and (min-width: 41.25rem) {
+    padding-left: calc(10% + 20vw);
+  }
+
+  h2 {
+    color: $white;
+    margin-bottom: 3.275rem;
+  }
+
+  .wrapper {
+    position: relative;
+    background-color: $pink;
+    padding: 1.6875rem 1.6875rem 3.375rem;
+
+    @media only screen and (min-width: 41.25rem) {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @media only screen and (min-width: 113.75rem) {
+      padding-right: 15%;
+    }
+  }
+
+  .mail-icon {
+    fill: $white;
+    width: 1.125rem;
+    height: 1.125rem;
+    padding-top: .35rem;
+  }
+
+  .email {
+    display: inline-block;
+    margin-bottom: 1.125rem;
+  }
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+
+  svg {
+    fill: $white;
+    width: 2.875rem;
+    height: 2.875rem;
+    padding: .5rem;
+  }
+
+  .footer-slack {
+    width: 4rem;
+    height: 4rem;
+    margin: -.48rem;
+  }
+  
+  .footer-git {
+    padding: .6rem;
+  }
+}
