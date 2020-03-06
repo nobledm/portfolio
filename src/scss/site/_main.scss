@@ -61,3 +61,12 @@ p {
   display: flex;
   justify-content: space-around;
 }
+
+@media only screen and (min-width: 62rem) {
+  .intro {
+    column-count: 2;
+    column-rule: 3px double rgba($blue, .6);
+    margin: 0 auto 1.125rem;
+    max-width: 77.5rem;
+  }
+}
